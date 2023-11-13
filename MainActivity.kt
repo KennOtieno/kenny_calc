@@ -4,9 +4,15 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var myEditText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Initialize EditTexxt
+        myEditText = findViewById<EditText>(R.id.myEditText)
 
         // Decare variables as arrays so as to group together the Number and Expressions
         var myNumbers = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
