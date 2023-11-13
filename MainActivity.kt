@@ -13,9 +13,6 @@ class MainActivity : AppCompatActivity() {
         var myExpressions = arrayOf("+", "-", "*", "(", ")", "=", "/")
 
         // All the variables above are Buttons
-        lateinit var myNumbers: Button
-        lateinit var myExpressions: Button
-
         myNumbersButton = findViewById<Button>(R.id.myNumbersButton)
         myExpressionsButton = findViewById<Button>(R.id.myExpressionsButton)
 
